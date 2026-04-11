@@ -1,0 +1,6 @@
+@Radisson_RHG_HostAddress = http://localhost:5125
+
+GET {{Radisson_RHG_HostAddress}}/Registration/
+Accept: application/json
+
+###
