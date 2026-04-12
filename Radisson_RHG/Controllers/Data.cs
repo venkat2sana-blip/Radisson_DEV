@@ -11,5 +11,6 @@ namespace Radisson_RHG.Controllers
         }
 
         public DbSet<Registration> registrations { get; set; }
+        public DbSet<User> Users { get; set; }
     }
 }

@@ -163,3 +163,9 @@ D:\corepractice\Radisson_RHG\Radisson_RHG\bin\Debug\net10.0\runtimes\win-x86\nat
 D:\corepractice\Radisson_RHG\Radisson_RHG\bin\Debug\net10.0\Microsoft.AspNetCore.JsonPatch.dll
 D:\corepractice\Radisson_RHG\Radisson_RHG\bin\Debug\net10.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 D:\corepractice\Radisson_RHG\Radisson_RHG\bin\Debug\net10.0\Newtonsoft.Json.Bson.dll
+D:\corepractice\Radisson_RHG\Radisson_RHG\obj\Debug\net10.0\Radisson_RHG.sourcelink.json
+D:\corepractice\Radisson_RHG\Radisson_RHG\bin\Debug\net10.0\BCrypt.Net-Next.dll
+D:\corepractice\Radisson_RHG\Radisson_RHG\bin\Debug\net10.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\corepractice\Radisson_RHG\Radisson_RHG\bin\Debug\net10.0\FluentValidation.dll
+D:\corepractice\Radisson_RHG\Radisson_RHG\bin\Debug\net10.0\FluentValidation.AspNetCore.dll
+D:\corepractice\Radisson_RHG\Radisson_RHG\bin\Debug\net10.0\FluentValidation.DependencyInjectionExtensions.dll

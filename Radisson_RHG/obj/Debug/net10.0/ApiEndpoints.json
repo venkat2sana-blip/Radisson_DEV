@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "Radisson_RHG.Controllers.AuthController",
+    "Method": "Register",
+    "RelativePath": "api/Auth/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "Radisson_RHG.Controllers.AuthController\u002BRegisterRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Radisson_RHG.Controllers.RegistrationController",
     "Method": "Getall",
     "RelativePath": "api/Registration",
