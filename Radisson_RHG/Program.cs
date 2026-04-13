@@ -21,24 +21,24 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers().AddNewtonsoftJson();
 
-// adding this below line
-builder.Services.AddFluentValidationAutoValidation()
-                .AddValidatorsFromAssemblyContaining<RegisterRequestValidator>();
+// adding this below line validation purpose
+builder.Services.AddFluentValidationAutoValidation();
+builder.Services.AddValidatorsFromAssemblyContaining<Radisson_RHG.Validators.RegisterRequestValidator>();
 
 
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// adding this below lines
+// adding this below lines connection string
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// adding this also
+// adding this also adding repository and services in middleware
 builder.Services.AddScoped<IRegistrationRepository,RegistrationRepo>();
 builder.Services.AddScoped<IRegistrationInterface,Registractionservices>();
 
-//adding this also
+//adding this also jwt token
 builder.Services.AddScoped<IRepositoryUserInterface, UserRepository>();
 builder.Services.AddScoped<IUserAuthServices, UserAuthServices>();
 var jwt = builder.Configuration.GetSection("Jwt");
@@ -68,13 +68,13 @@ builder.Services.AddAuthorization();
 builder.Services.AddOpenApi();
 
 var app = builder.Build();
-//this is writing i am
+//this is writing i am adming credentials saving 
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
     var userRepo = services.GetRequiredService<IRepositoryUserInterface>();
 
-    const string adminUserName = "admin";
+    const string adminUserName = "Admin";
     if (userRepo!.GetByUserName(adminUserName) == null)
     {
         var adminPassword = "Admin@123";

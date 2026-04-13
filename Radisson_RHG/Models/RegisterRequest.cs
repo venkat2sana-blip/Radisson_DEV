@@ -16,7 +16,7 @@ namespace Radisson_RHG.Models
         [Required]
         [DataType(DataType.Password)]
         [MinLength(8)]
-        [MaxLength(15)]
+        [MaxLength(100)]
         public string Password { get; set; } = null!;
 
     }

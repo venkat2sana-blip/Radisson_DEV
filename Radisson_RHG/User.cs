@@ -15,11 +15,11 @@ namespace Radisson_RHG
         public string Email { get; set; } = null;
 
         [Required]
-        [DataType(DataType.Password)]
-        [MinLength(8)]
-        [MaxLength(15)]
+        [MaxLength(200)]
         public string PasswordHash { get; set; } = null; // store hashed password
         public DateTime CreatedOn { get; set; }
+
+        public string Role { get; set; } = "User";
 
     }
 }
