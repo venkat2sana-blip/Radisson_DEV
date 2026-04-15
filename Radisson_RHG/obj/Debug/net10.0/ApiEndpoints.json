@@ -154,5 +154,36 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Radisson_RHG.Controllers.RegistrationController",
+    "Method": "GetByDateRange",
+    "RelativePath": "api/Registration/between",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "from",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "to",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Radisson_RHG.Registration, Radisson_RHG, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]

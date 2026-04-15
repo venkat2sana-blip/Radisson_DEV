@@ -54,6 +54,11 @@ namespace Radisson_RHG.Services
 
         }
 
+        public IEnumerable<Registration> GetByDateRange(DateTime from,DateTime to)
+        {
+            return _reg.GetByDateRange(from, to);
+        }
+
 
     }
 }

@@ -12,6 +12,8 @@
 
         public bool Remove(int id);
 
+        public IEnumerable<Registration> GetByDateRange(DateTime from, DateTime to);
+
   
     }
 }

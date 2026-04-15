@@ -40,6 +40,15 @@ namespace Radisson_RHG.Repositories
             _context.SaveChanges();
         }
 
-        
+        public IEnumerable<Registration> GetByDateRange(DateTime from, DateTime to)
+        {
+            return _context.registrations.AsNoTracking()
+                .Where(r => r.CreatedOn >= from && r.CreatedOn <= to)
+                .OrderBy(r => r.CreatedOn)
+                .ToList();
+        }
+
+
+
     }
 }

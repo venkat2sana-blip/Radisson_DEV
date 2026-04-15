@@ -84,5 +84,22 @@ namespace Radisson_RHG.Controllers
                 return BadRequest();
             return NoContent();
         }
+
+
+        [HttpGet("between")]
+       public ActionResult<IEnumerable<Registration>> GetByDateRange(DateTime from,DateTime to)
+        {
+            if (from == default || to == default)
+                return BadRequest("Both from and to query parameters are required in ISO date format,");
+            if (from > to)
+                return BadRequest("from must be less than or equal to to");
+            var fromUtc = from;
+            var toUtc = to.Date.AddDays(1).AddTicks(-1);
+
+            var list = _registrationinterface.GetByDateRange(fromUtc, toUtc);
+            return Ok(list);
+
+        }
+
     }
 }
