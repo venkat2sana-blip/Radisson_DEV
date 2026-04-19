@@ -102,14 +102,17 @@ namespace Radisson_RHG.Controllers
         }
 
 
-        [HttpGet("by-mobile/{Mobile}")]
-        public ActionResult<Registration> GetByMobile(string mobile)
+        [HttpGet("by-mobile-or-email")]
+        public ActionResult<Registration> GetByMobileOrEmail([FromQuery]string? mobile,[FromQuery]string? email)
         {
-            var returnresult = _registrationinterface.GetByMobile(mobile);
+
+            if (string.IsNullOrEmpty(mobile) && string.IsNullOrEmpty(email))
+                return BadRequest("please provide atleast mobile or email");
+            var returnresult = _registrationinterface.GetByMobileOrEmail(mobile,email);
             if (returnresult == null)
-            {
-                return NotFound();
-            }
+            
+                return NotFound("No registration found with the provided details");
+            
 
             return Ok(returnresult);
 

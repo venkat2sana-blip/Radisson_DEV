@@ -60,9 +60,9 @@ namespace Radisson_RHG.Services
         }
 
 
-        public Registration GetByMobile(string mobile)
+        public Registration GetByMobileOrEmail(string mobile, string email)
         {
-            return _reg.GetByMobile(mobile);
+            return _reg.GetByMobileOrEmail(mobile,email);
         }
 
     }

@@ -368,7 +368,7 @@
         }
       }
     },
-    "/api/Registration/by-mobile/{Mobile}": {
+    "/api/Registration/by-mobile-or-email": {
       "get": {
         "tags": [
           "Registration"
@@ -376,8 +376,14 @@
         "parameters": [
           {
             "name": "mobile",
-            "in": "path",
-            "required": true,
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "email",
+            "in": "query",
             "schema": {
               "type": "string"
             }
