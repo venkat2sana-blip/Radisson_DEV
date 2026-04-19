@@ -49,9 +49,23 @@ namespace Radisson_RHG.Repositories
                 .ToList();
         }
 
-        public Registration GetByMobile(string mobile)
+        public Registration GetByMobileOrEmail(string? mobile,string? email)
         {
-            return _context.registrations.FirstOrDefault(x => x.Mobile == mobile);
+
+            if(string.IsNullOrEmpty(mobile) && string.IsNullOrEmpty(email))
+            
+                return null;
+
+
+            // If BOTH are provided, match record that satisfies both
+            if (!string.IsNullOrEmpty(mobile) && !string.IsNullOrEmpty(email))
+            {
+                return _context.registrations.FirstOrDefault(x => x.Mobile == mobile && x.Email == email);
+            }
+
+            // If only one is provided, match by whichever is given
+            return _context.registrations.FirstOrDefault(x =>
+            (!string.IsNullOrEmpty(mobile) && x.Mobile == mobile) || (!string.IsNullOrEmpty(email) && x.Email == email));
 
         }
 

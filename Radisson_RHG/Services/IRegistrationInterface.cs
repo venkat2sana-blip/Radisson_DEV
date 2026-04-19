@@ -14,7 +14,7 @@
 
         public IEnumerable<Registration> GetByDateRange(DateTime from, DateTime to);
 
-        public Registration GetByMobile(string mobile);
+        public Registration GetByMobileOrEmail(string mobile, string email);
 
   
     }

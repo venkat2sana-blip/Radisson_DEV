@@ -188,8 +188,8 @@
   },
   {
     "ContainingType": "Radisson_RHG.Controllers.RegistrationController",
-    "Method": "GetByMobile",
-    "RelativePath": "api/Registration/by-mobile/{Mobile}",
+    "Method": "GetByMobileOrEmail",
+    "RelativePath": "api/Registration/by-mobile-or-email",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -197,7 +197,12 @@
       {
         "Name": "mobile",
         "Type": "System.String",
-        "IsRequired": true
+        "IsRequired": false
+      },
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
