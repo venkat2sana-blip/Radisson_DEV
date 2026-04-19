@@ -25,7 +25,7 @@ namespace Radisson_RHG.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<Registration>> Getall() => Ok(_registrationinterface.Getall());
 
-        [HttpGet("{id}")]
+        [HttpGet("by-id/{id}")]
         public ActionResult<Registration> Getbyid(int id)
         {
             var res = _registrationinterface.Getbyid(id);
@@ -101,5 +101,19 @@ namespace Radisson_RHG.Controllers
 
         }
 
+
+        [HttpGet("by-mobile/{Mobile}")]
+        public ActionResult<Registration> GetByMobile(string mobile)
+        {
+            var returnresult = _registrationinterface.GetByMobile(mobile);
+            if (returnresult == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(returnresult);
+
+            
+        }
     }
 }
