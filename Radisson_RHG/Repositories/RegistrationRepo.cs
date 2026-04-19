@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.EntityFrameworkCore;
 using Radisson_RHG.Controllers;
 using System.Collections.Generic;
 using System.Linq;
@@ -48,7 +49,11 @@ namespace Radisson_RHG.Repositories
                 .ToList();
         }
 
+        public Registration GetByMobile(string mobile)
+        {
+            return _context.registrations.FirstOrDefault(x => x.Mobile == mobile);
 
+        }
 
     }
 }

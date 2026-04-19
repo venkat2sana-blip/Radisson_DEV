@@ -60,5 +60,10 @@ namespace Radisson_RHG.Services
         }
 
 
+        public Registration GetByMobile(string mobile)
+        {
+            return _reg.GetByMobile(mobile);
+        }
+
     }
 }

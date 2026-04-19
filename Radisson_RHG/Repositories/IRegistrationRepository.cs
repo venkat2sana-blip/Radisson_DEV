@@ -15,5 +15,7 @@ namespace Radisson_RHG.Repositories
         public void Remove(Registration re);
 
         public IEnumerable<Registration> GetByDateRange(DateTime from, DateTime to);
+
+        public Registration GetByMobile(string mobile);
     }
 }
