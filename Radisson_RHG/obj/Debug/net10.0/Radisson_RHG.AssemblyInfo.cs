@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Radisson_RHG")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+27f0ff1a42fd0be31d62a13f8dffe4997cf0ef02")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e871dca4e1a301db69fd74a6c81ca81fe01cb5a4")]
 [assembly: System.Reflection.AssemblyProductAttribute("Radisson_RHG")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Radisson_RHG")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

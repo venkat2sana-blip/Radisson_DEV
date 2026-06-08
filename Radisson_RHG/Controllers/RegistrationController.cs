@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Internal;
 using Radisson_RHG.Services;
 using Microsoft.AspNetCore.JsonPatch;
+using Radisson_RHG.Models;
 
 namespace Radisson_RHG.Controllers
 {
@@ -38,11 +39,27 @@ namespace Radisson_RHG.Controllers
         }
 
         [HttpPost]
-        public ActionResult<Registration> Create([FromBody] Registration rege)
+        public ActionResult<Registration> Create([FromBody] RegistrationCreateDto rege)
         {
+            //if (rege == null)
+            //    return BadRequest();
+            //var insert = _registrationinterface.Create(rege);
+            //return Ok(insert);
+
             if (rege == null)
                 return BadRequest();
-            var insert = _registrationinterface.Create(rege);
+            if (!ModelState.IsValid)
+                return ValidationProblem(ModelState);
+            var entity = new Registration
+            {
+                Name = rege.Name,
+                Mobile = rege.Mobile,
+                Email = rege.Email,
+                Age = rege.Age,
+                Gender = !string.IsNullOrEmpty(rege.Gender) ? rege.Gender[0] : '0',
+                CreatedOn = rege.CreatedOn ?? DateTime.UtcNow
+            };
+            var insert = _registrationinterface.Create(entity);
             return Ok(insert);
 
         }

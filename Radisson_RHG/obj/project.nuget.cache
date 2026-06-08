@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dN2es0myNco=",
+  "dgSpecHash": "NadgpnYgYw8=",
   "success": true,
-  "projectFilePath": "D:\\corepractice\\Radisson_RHG\\Radisson_RHG\\Radisson_RHG.csproj",
+  "projectFilePath": "D:\\GIT_CLONED_Projects\\Radisson_DEV\\Radisson_RHG\\Radisson_RHG.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Vallepu Venkat\\.nuget\\packages\\azure.core\\1.47.1\\azure.core.1.47.1.nupkg.sha512",
     "C:\\Users\\Vallepu Venkat\\.nuget\\packages\\azure.identity\\1.14.2\\azure.identity.1.14.2.nupkg.sha512",

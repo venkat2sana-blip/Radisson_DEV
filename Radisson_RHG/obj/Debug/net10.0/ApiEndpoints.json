@@ -45,7 +45,7 @@
     "Parameters": [
       {
         "Name": "rege",
-        "Type": "Radisson_RHG.Registration",
+        "Type": "Radisson_RHG.Models.RegistrationCreateDto",
         "IsRequired": true
       }
     ],
