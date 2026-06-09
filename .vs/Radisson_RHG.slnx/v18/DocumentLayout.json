@@ -7,7 +7,27 @@
       "RelativeMoniker": "D:0:0:{313B42C4-E77D-EC22-38AC-887D0A5FDC21}|Radisson_RHG\\Radisson_RHG.csproj|solutionrelative:radisson_rhg\\controllers\\registrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{313B42C4-E77D-EC22-38AC-887D0A5FDC21}|Radisson_RHG\\Radisson_RHG.csproj|d:\\corepractice\\radisson_rhg\\radisson_rhg\\repositories\\registrationrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+=======
+      "AbsoluteMoniker": "D:0:0:{313B42C4-E77D-EC22-38AC-887D0A5FDC21}|Radisson_RHG\\Radisson_RHG.csproj|d:\\git_cloned_projects\\radisson_dev\\radisson_rhg\\models\\registrationcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{313B42C4-E77D-EC22-38AC-887D0A5FDC21}|Radisson_RHG\\Radisson_RHG.csproj|solutionrelative:radisson_rhg\\models\\registrationcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{313B42C4-E77D-EC22-38AC-887D0A5FDC21}|Radisson_RHG\\Radisson_RHG.csproj|d:\\git_cloned_projects\\radisson_dev\\radisson_rhg\\registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{313B42C4-E77D-EC22-38AC-887D0A5FDC21}|Radisson_RHG\\Radisson_RHG.csproj|solutionrelative:radisson_rhg\\registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{313B42C4-E77D-EC22-38AC-887D0A5FDC21}|Radisson_RHG\\Radisson_RHG.csproj|d:\\git_cloned_projects\\radisson_dev\\radisson_rhg\\models\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{313B42C4-E77D-EC22-38AC-887D0A5FDC21}|Radisson_RHG\\Radisson_RHG.csproj|solutionrelative:radisson_rhg\\models\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{313B42C4-E77D-EC22-38AC-887D0A5FDC21}|Radisson_RHG\\Radisson_RHG.csproj|d:\\git_cloned_projects\\radisson_dev\\radisson_rhg\\services\\registractionservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{313B42C4-E77D-EC22-38AC-887D0A5FDC21}|Radisson_RHG\\Radisson_RHG.csproj|solutionrelative:radisson_rhg\\services\\registractionservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{313B42C4-E77D-EC22-38AC-887D0A5FDC21}|Radisson_RHG\\Radisson_RHG.csproj|d:\\git_cloned_projects\\radisson_dev\\radisson_rhg\\repositories\\registrationrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+>>>>>>> Stashed changes
       "RelativeMoniker": "D:0:0:{313B42C4-E77D-EC22-38AC-887D0A5FDC21}|Radisson_RHG\\Radisson_RHG.csproj|solutionrelative:radisson_rhg\\repositories\\registrationrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -34,13 +54,56 @@
           "Children": [
             {
               "$type": "Document",
+<<<<<<< Updated upstream
+=======
+              "DocumentIndex": 1,
+              "Title": "RegistrationCreateDto.cs",
+              "DocumentMoniker": "D:\\GIT_CLONED_Projects\\Radisson_DEV\\Radisson_RHG\\Models\\RegistrationCreateDto.cs",
+              "RelativeDocumentMoniker": "Radisson_RHG\\Models\\RegistrationCreateDto.cs",
+              "ToolTip": "D:\\GIT_CLONED_Projects\\Radisson_DEV\\Radisson_RHG\\Models\\RegistrationCreateDto.cs",
+              "RelativeToolTip": "Radisson_RHG\\Models\\RegistrationCreateDto.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAABwAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-07T14:17:12.241Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Registration.cs",
+              "DocumentMoniker": "D:\\GIT_CLONED_Projects\\Radisson_DEV\\Radisson_RHG\\Registration.cs",
+              "RelativeDocumentMoniker": "Radisson_RHG\\Registration.cs",
+              "ToolTip": "D:\\GIT_CLONED_Projects\\Radisson_DEV\\Radisson_RHG\\Registration.cs",
+              "RelativeToolTip": "Radisson_RHG\\Registration.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-07T13:14:40.719Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RegisterRequest.cs",
+              "DocumentMoniker": "D:\\GIT_CLONED_Projects\\Radisson_DEV\\Radisson_RHG\\Models\\RegisterRequest.cs",
+              "RelativeDocumentMoniker": "Radisson_RHG\\Models\\RegisterRequest.cs",
+              "ToolTip": "D:\\GIT_CLONED_Projects\\Radisson_DEV\\Radisson_RHG\\Models\\RegisterRequest.cs",
+              "RelativeToolTip": "Radisson_RHG\\Models\\RegisterRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-07T13:12:33.271Z"
+            },
+            {
+              "$type": "Document",
+>>>>>>> Stashed changes
               "DocumentIndex": 0,
               "Title": "RegistrationController.cs",
               "DocumentMoniker": "D:\\corepractice\\Radisson_RHG\\Radisson_RHG\\Controllers\\RegistrationController.cs",
               "RelativeDocumentMoniker": "Radisson_RHG\\Controllers\\RegistrationController.cs",
               "ToolTip": "D:\\corepractice\\Radisson_RHG\\Radisson_RHG\\Controllers\\RegistrationController.cs",
               "RelativeToolTip": "Radisson_RHG\\Controllers\\RegistrationController.cs",
+<<<<<<< Updated upstream
               "ViewState": "AgIAAGEAAAAAAAAAAAAkwHoAAAAAAAAAAAAAAA==",
+=======
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAwBoAAAAxAAAAAAAAAA==",
+>>>>>>> Stashed changes
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-15T17:01:41.026Z",
               "EditorCaption": ""
