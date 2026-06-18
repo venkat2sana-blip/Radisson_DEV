@@ -26,21 +26,21 @@ builder.Services.AddFluentValidationAutoValidation();
 builder.Services.AddValidatorsFromAssemblyContaining<Radisson_RHG.Validators.RegisterRequestValidator>();
 
 
-
+builder.Services.AddRazorPages();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// adding this below lines connection string
+// DB connection adding this below lines connection string
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// adding this also adding repository and services in middleware
+// adding this also adding repository and services in middleware  DI Registration
 builder.Services.AddScoped<IRegistrationRepository,RegistrationRepo>();
 builder.Services.AddScoped<IRegistrationInterface,Registractionservices>();
-
-//adding this also jwt token
 builder.Services.AddScoped<IRepositoryUserInterface, UserRepository>();
 builder.Services.AddScoped<IUserAuthServices, UserAuthServices>();
+
+//JWT Authentication configuration
 var jwt = builder.Configuration.GetSection("Jwt");
 var key = Encoding.UTF8.GetBytes(jwt["key"]);
 builder.Services.AddAuthentication(options =>
@@ -105,10 +105,13 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseStaticFiles();
+app.UseRouting();
 app.UseAuthorization();
 app.UseAuthentication();
-app.UseRouting();
+//app.UseRouting();
 
+app.MapRazorPages();
 app.MapControllers();
 
 app.Run();

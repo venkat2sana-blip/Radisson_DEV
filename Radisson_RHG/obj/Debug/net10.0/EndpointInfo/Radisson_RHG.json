@@ -5,6 +5,18 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/Admin/dashboard": {
+      "get": {
+        "tags": [
+          "Admin"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Auth/register": {
       "post": {
         "tags": [
@@ -30,6 +42,42 @@
             "application/*+json": {
               "schema": {
                 "$ref": "#/components/schemas/RegisterRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Auth/login": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequest"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequest"
               }
             }
           }
@@ -86,22 +134,22 @@
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "$ref": "#/components/schemas/Registration"
+                "$ref": "#/components/schemas/RegistrationCreateDto"
               }
             },
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Registration"
+                "$ref": "#/components/schemas/RegistrationCreateDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Registration"
+                "$ref": "#/components/schemas/RegistrationCreateDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Registration"
+                "$ref": "#/components/schemas/RegistrationCreateDto"
               }
             }
           }
@@ -416,6 +464,24 @@
   },
   "components": {
     "schemas": {
+      "LoginRequest": {
+        "required": [
+          "password",
+          "username"
+        ],
+        "type": "object",
+        "properties": {
+          "username": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "password": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
       "Operation": {
         "type": "object",
         "properties": {
@@ -503,10 +569,61 @@
           }
         },
         "additionalProperties": false
+      },
+      "RegistrationCreateDto": {
+        "required": [
+          "email",
+          "gender",
+          "mobile",
+          "name",
+          "password"
+        ],
+        "type": "object",
+        "properties": {
+          "name": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "mobile": {
+            "minLength": 1,
+            "pattern": "^\\d{10}$",
+            "type": "string"
+          },
+          "email": {
+            "minLength": 1,
+            "type": "string",
+            "format": "email"
+          },
+          "age": {
+            "maximum": 99,
+            "minimum": 1,
+            "type": "integer",
+            "format": "int32"
+          },
+          "gender": {
+            "minLength": 1,
+            "pattern": "^[MFO]$",
+            "type": "string"
+          },
+          "password": {
+            "minLength": 8,
+            "type": "string"
+          },
+          "createdOn": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
       }
     }
   },
   "tags": [
+    {
+      "name": "Admin"
+    },
     {
       "name": "Auth"
     },

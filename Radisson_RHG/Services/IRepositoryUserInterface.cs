@@ -2,7 +2,9 @@
 {
     public interface IRepositoryUserInterface
     {
-        User? GetByUserName(string userName);
+        User?  GetByUserName(string userName);
+
+          
         User? GetById(int id);
         void Create(User user);
         void Savechanges();

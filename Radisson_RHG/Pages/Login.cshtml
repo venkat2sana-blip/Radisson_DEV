@@ -1,0 +1,80 @@
+﻿ @page "/login"
+@model Radisson_RHG.Pages.LoginModel
+@{
+} 
+@* csharp Radisson_RHG\Pages\Login.cshtml *@
+
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width" />
+  <style>
+    body { font-family:Segoe UI, Arial; max-width:640px; margin:2rem auto; }
+    label{display:block;margin-top:12px}
+    input{width:100%;padding:8px;margin-top:4px}
+    button{margin-top:12px;padding:8px 12px}
+    .error{color:#b00020}
+  </style>
+</head>
+<body>
+  <h1>Sign in</h1>
+
+  <div id="error" class="error" style="display:none"></div>
+
+  <form id="loginForm">
+    <label>Username
+      <input id="username" name="username" required />
+    </label>
+    <label>Password
+      <input id="password" name="password" type="password" required />
+    </label>
+    <button type="submit">Sign in</button>
+  </form>
+
+  <script>
+    const form = document.getElementById('loginForm');
+    const err = document.getElementById('error');
+
+    form.addEventListener('submit', async e => {
+      e.preventDefault();
+      err.style.display = 'none';
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+
+      try {
+        const res = await fetch('/api/auth/login', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ username, password })
+        });
+
+        if (!res.ok) {
+          const body = await res.json().catch(()=>({ message: res.statusText }));
+          err.textContent = body?.message ?? 'Login failed';
+          err.style.display = 'block';
+          return;
+        }
+
+        const data = await res.json();
+        // store token (client-side)
+        if (data.token) localStorage.setItem('jwt', data.token);
+        // optional store role
+        if (data.role) localStorage.setItem('role', data.role);
+        // redirect to role-specific page returned from API
+        if (data.redirectUrl) {
+          window.location.href = data.redirectUrl;
+          return;
+        }
+        // fallback
+        window.location.href = (data.role && data.role.toLowerCase() === 'admin') ? '/admin/dashboard' : '/user/home';
+      } catch (ex) {
+        err.textContent = ex?.message ?? 'Network error';
+        err.style.display = 'block';
+      }
+    });
+  </script>
+</body>
+</html>

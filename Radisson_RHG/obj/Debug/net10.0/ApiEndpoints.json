@@ -1,5 +1,31 @@
 [
   {
+    "ContainingType": "Radisson_RHG.Controllers.AdminController",
+    "Method": "Dashboard",
+    "RelativePath": "api/Admin/dashboard",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Radisson_RHG.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "reqs",
+        "Type": "Radisson_RHG.Models.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Radisson_RHG.Controllers.AuthController",
     "Method": "Register",
     "RelativePath": "api/Auth/register",
@@ -45,7 +71,7 @@
     "Parameters": [
       {
         "Name": "rege",
-        "Type": "Radisson_RHG.Registration",
+        "Type": "Radisson_RHG.Models.RegistrationCreateDto",
         "IsRequired": true
       }
     ],
