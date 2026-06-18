@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Internal;
 using Radisson_RHG.Services;
 using Microsoft.AspNetCore.JsonPatch;
+using Radisson_RHG.Models;
 
 namespace Radisson_RHG.Controllers
 {
@@ -47,14 +48,11 @@ namespace Radisson_RHG.Controllers
 
         //create : insert into users and registration tables atomically
         [HttpPost]
-        public ActionResult<Registration> Create([FromBody] Registration rege)
+        public ActionResult<Registration> Create([FromBody] RegistrationCreateDto rege)
         {
             if (rege == null)
                 return BadRequest();
-<<<<<<< Updated upstream
-            var insert = _registrationinterface.Create(rege);
-            return Ok(insert);
-=======
+
             if (!ModelState.IsValid)
                 return ValidationProblem(ModelState);
 
@@ -70,7 +68,7 @@ namespace Radisson_RHG.Controllers
                 Mobile = rege.Mobile,
                 Email = rege.Email,
                 Age = rege.Age,
-                Gender = !string.IsNullOrEmpty(rege.Gender) ? rege.Gender[0] : '0',
+                Gender = !string.IsNullOrEmpty(rege.Gender) ? rege.Gender[0] : 'U',
                 CreatedOn = rege.CreatedOn ?? DateTime.UtcNow
             };
 
@@ -87,6 +85,7 @@ namespace Radisson_RHG.Controllers
                     PasswordHash=BCrypt.Net.BCrypt.HashPassword(rege.Password),
                     CreatedOn=DateTime.UtcNow,
                     Role="User"
+                    // Role will be change here if you want to assign different roles based on some logic, for now it's hardcoded to "User"
                 };
 
                 _db.Users.Add(user);
@@ -96,7 +95,8 @@ namespace Radisson_RHG.Controllers
                 _db.SaveChanges();
 
                 transaction.Commit();
-                return Ok(entity);
+                //return Ok(entity);
+                return CreatedAtAction(nameof(Getbyid), new { id = entity.Id }, entity);
             }
             catch(Exception e)
             {
@@ -106,9 +106,8 @@ namespace Radisson_RHG.Controllers
             }
 
 
-            //var insert = _registrationinterface.Create(entity);
-            //return Ok(insert);
->>>>>>> Stashed changes
+
+
 
         }
 

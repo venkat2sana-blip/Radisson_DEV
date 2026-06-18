@@ -19,7 +19,7 @@ namespace Radisson_RHG
         public string PasswordHash { get; set; } = null; // store hashed password
         public DateTime CreatedOn { get; set; }
 
-        public string Role { get; set; } = "User";
+        public string Role { get; set; } = "user";
 
     }
 }

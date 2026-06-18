@@ -14,11 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Radisson_RHG")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< Updated upstream
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+27f0ff1a42fd0be31d62a13f8dffe4997cf0ef02")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5ecb842e08844d8e1ac7553c6d3245c8f7310e0c")]
->>>>>>> Stashed changes
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f0d11b6c609932c506357b41b9b83c2267d1b509")]
 [assembly: System.Reflection.AssemblyProductAttribute("Radisson_RHG")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Radisson_RHG")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

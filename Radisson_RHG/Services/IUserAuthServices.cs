@@ -8,9 +8,10 @@ namespace Radisson_RHG.Services
     public interface IUserAuthServices
     {
         string? Authenticate(string userName, string password);
+        //object Authenticate(string Username, string Password);
     }
 
-    public class UserAuthServices:IUserAuthServices
+    public class UserAuthServices: IUserAuthServices
     {
         private readonly IRepositoryUserInterface _iuser;
         private readonly IConfiguration _config;
@@ -33,18 +34,19 @@ namespace Radisson_RHG.Services
             var key=new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSection["Key"]));
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
-            var claims = new[]
+            var claims = new List<Claim>
             {
               new Claim(JwtRegisteredClaimNames.Sub, user.UserName),
               new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-              new Claim("id",user.Id.ToString())
+              new Claim("id",user.Id.ToString()),
+              new Claim(ClaimTypes.Role,user.Role??"User")
             };
 
             var token = new JwtSecurityToken(
                 issuer: jwtSection["Issuer"],
                 audience: jwtSection["Audience"],
                 claims: claims,
-                expires: DateTime.UtcNow.AddMinutes(double.Parse(jwtSection["ExpireMinutes"])),
+                expires: DateTime.UtcNow.AddMinutes(double.Parse(jwtSection["ExpireMinutes"]??"60")),
                 signingCredentials:creds
                 );
 
