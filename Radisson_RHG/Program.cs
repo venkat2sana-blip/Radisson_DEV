@@ -12,6 +12,7 @@ using Radisson_RHG;
 using FluentValidation.AspNetCore;
 using FluentValidation;
 using Radisson_RHG.Validators;
+using Radisson_RHG.Middleware;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -103,12 +104,15 @@ if (app.Environment.IsDevelopment())
         app.UseSwaggerUI();
     }
 
+// Global exception handling middleware (maps custom exceptions to HTTP responses)
+app.UseMiddleware<ExceptionHandlingMiddleware>();
+
 app.UseHttpsRedirection();
 
 app.UseStaticFiles();
 app.UseRouting();
-app.UseAuthorization();
 app.UseAuthentication();
+app.UseAuthorization();
 //app.UseRouting();
 
 app.MapRazorPages();

@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "D:\\GIT_CLONED_Projects\\Radisson_DEV\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{313B42C4-E77D-EC22-38AC-887D0A5FDC21}|Radisson_RHG\\Radisson_RHG.csproj|d:\\git_cloned_projects\\radisson_dev\\radisson_rhg\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{313B42C4-E77D-EC22-38AC-887D0A5FDC21}|Radisson_RHG\\Radisson_RHG.csproj|solutionrelative:radisson_rhg\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{313B42C4-E77D-EC22-38AC-887D0A5FDC21}|Radisson_RHG\\Radisson_RHG.csproj|d:\\git_cloned_projects\\radisson_dev\\radisson_rhg\\controllers\\registrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{313B42C4-E77D-EC22-38AC-887D0A5FDC21}|Radisson_RHG\\Radisson_RHG.csproj|solutionrelative:radisson_rhg\\controllers\\registrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{313B42C4-E77D-EC22-38AC-887D0A5FDC21}|Radisson_RHG\\Radisson_RHG.csproj|d:\\git_cloned_projects\\radisson_dev\\radisson_rhg\\exceptions\\appexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{313B42C4-E77D-EC22-38AC-887D0A5FDC21}|Radisson_RHG\\Radisson_RHG.csproj|solutionrelative:radisson_rhg\\exceptions\\appexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{313B42C4-E77D-EC22-38AC-887D0A5FDC21}|Radisson_RHG\\Radisson_RHG.csproj|d:\\git_cloned_projects\\radisson_dev\\radisson_rhg\\exceptions\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{313B42C4-E77D-EC22-38AC-887D0A5FDC21}|Radisson_RHG\\Radisson_RHG.csproj|solutionrelative:radisson_rhg\\exceptions\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{313B42C4-E77D-EC22-38AC-887D0A5FDC21}|Radisson_RHG\\Radisson_RHG.csproj|d:\\git_cloned_projects\\radisson_dev\\radisson_rhg\\middleware\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{313B42C4-E77D-EC22-38AC-887D0A5FDC21}|Radisson_RHG\\Radisson_RHG.csproj|solutionrelative:radisson_rhg\\middleware\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{313B42C4-E77D-EC22-38AC-887D0A5FDC21}|Radisson_RHG\\Radisson_RHG.csproj|d:\\git_cloned_projects\\radisson_dev\\radisson_rhg\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{313B42C4-E77D-EC22-38AC-887D0A5FDC21}|Radisson_RHG\\Radisson_RHG.csproj|solutionrelative:radisson_rhg\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +30,72 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "D:\\GIT_CLONED_Projects\\Radisson_DEV\\Radisson_RHG\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Radisson_RHG\\Controllers\\AuthController.cs",
-              "ToolTip": "D:\\GIT_CLONED_Projects\\Radisson_DEV\\Radisson_RHG\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Radisson_RHG\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAcAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\GIT_CLONED_Projects\\Radisson_DEV\\Radisson_RHG\\Program.cs",
+              "RelativeDocumentMoniker": "Radisson_RHG\\Program.cs",
+              "ToolTip": "D:\\GIT_CLONED_Projects\\Radisson_DEV\\Radisson_RHG\\Program.cs",
+              "RelativeToolTip": "Radisson_RHG\\Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAABRwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-10T11:52:19.464Z",
+              "WhenOpened": "2026-07-29T12:29:06.071Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ExceptionHandlingMiddleware.cs",
+              "DocumentMoniker": "D:\\GIT_CLONED_Projects\\Radisson_DEV\\Radisson_RHG\\Middleware\\ExceptionHandlingMiddleware.cs",
+              "RelativeDocumentMoniker": "Radisson_RHG\\Middleware\\ExceptionHandlingMiddleware.cs",
+              "ToolTip": "D:\\GIT_CLONED_Projects\\Radisson_DEV\\Radisson_RHG\\Middleware\\ExceptionHandlingMiddleware.cs",
+              "RelativeToolTip": "Radisson_RHG\\Middleware\\ExceptionHandlingMiddleware.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-29T12:28:55.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NotFoundException.cs",
+              "DocumentMoniker": "D:\\GIT_CLONED_Projects\\Radisson_DEV\\Radisson_RHG\\Exceptions\\NotFoundException.cs",
+              "RelativeDocumentMoniker": "Radisson_RHG\\Exceptions\\NotFoundException.cs",
+              "ToolTip": "D:\\GIT_CLONED_Projects\\Radisson_DEV\\Radisson_RHG\\Exceptions\\NotFoundException.cs",
+              "RelativeToolTip": "Radisson_RHG\\Exceptions\\NotFoundException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-29T12:28:45.295Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "AppException.cs",
+              "DocumentMoniker": "D:\\GIT_CLONED_Projects\\Radisson_DEV\\Radisson_RHG\\Exceptions\\AppException.cs",
+              "RelativeDocumentMoniker": "Radisson_RHG\\Exceptions\\AppException.cs",
+              "ToolTip": "D:\\GIT_CLONED_Projects\\Radisson_DEV\\Radisson_RHG\\Exceptions\\AppException.cs",
+              "RelativeToolTip": "Radisson_RHG\\Exceptions\\AppException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-29T12:28:41.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "RegistrationController.cs",
               "DocumentMoniker": "D:\\GIT_CLONED_Projects\\Radisson_DEV\\Radisson_RHG\\Controllers\\RegistrationController.cs",
               "RelativeDocumentMoniker": "Radisson_RHG\\Controllers\\RegistrationController.cs",
               "ToolTip": "D:\\GIT_CLONED_Projects\\Radisson_DEV\\Radisson_RHG\\Controllers\\RegistrationController.cs",
               "RelativeToolTip": "Radisson_RHG\\Controllers\\RegistrationController.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAAAoAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAABUAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-10T09:13:33.335Z"
+              "WhenOpened": "2026-07-27T17:44:58.639Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Internal;
 using Radisson_RHG.Services;
+using Radisson_RHG.Exceptions;
 using Microsoft.AspNetCore.JsonPatch;
 using Radisson_RHG.Models;
 
@@ -40,7 +41,8 @@ namespace Radisson_RHG.Controllers
             var res = _registrationinterface.Getbyid(id);
             if(res==null)
             {
-              return  NotFound();
+              // throw a custom NotFoundException to demonstrate middleware mapping
+              throw new NotFoundException($"Registration with id {id} was not found.");
 
             }
             return Ok(res);
@@ -182,5 +184,30 @@ namespace Radisson_RHG.Controllers
 
             
         }
+
+      //public class AppException : Exception
+      //  {
+      //      public AppException()
+      //      {
+
+      //      }
+      //      public AppException(string message): base(message)
+      //      {
+
+      //      }
+      //      public AppException(string message,Exception innner): base(message, innner)
+      //      {
+
+      //      }
+      //  }
+
+      //  public class NotFoundException : AppException
+      //  {
+      //      public NotFoundException(string message): base(message)
+      //      {
+
+      //      }
+      //  }
+
     }
 }
