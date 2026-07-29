@@ -152,6 +152,8 @@ D:\GIT_CLONED_Projects\Radisson_DEV\Radisson_RHG\obj\Debug\net10.0\Radisson_RHG.
 D:\GIT_CLONED_Projects\Radisson_DEV\Radisson_RHG\obj\Debug\net10.0\Radisson_RHG.csproj.CoreCompileInputs.cache
 D:\GIT_CLONED_Projects\Radisson_DEV\Radisson_RHG\obj\Debug\net10.0\Radisson_RHG.MvcApplicationPartsAssemblyInfo.cs
 D:\GIT_CLONED_Projects\Radisson_DEV\Radisson_RHG\obj\Debug\net10.0\Radisson_RHG.MvcApplicationPartsAssemblyInfo.cache
+D:\GIT_CLONED_Projects\Radisson_DEV\Radisson_RHG\obj\Debug\net10.0\Radisson_RHG.RazorAssemblyInfo.cache
+D:\GIT_CLONED_Projects\Radisson_DEV\Radisson_RHG\obj\Debug\net10.0\Radisson_RHG.RazorAssemblyInfo.cs
 D:\GIT_CLONED_Projects\Radisson_DEV\Radisson_RHG\obj\Debug\net10.0\Radisson_RHG.sourcelink.json
 D:\GIT_CLONED_Projects\Radisson_DEV\Radisson_RHG\obj\Debug\net10.0\rjimswa.dswa.cache.json
 D:\GIT_CLONED_Projects\Radisson_DEV\Radisson_RHG\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
@@ -169,5 +171,3 @@ D:\GIT_CLONED_Projects\Radisson_DEV\Radisson_RHG\obj\Debug\net10.0\refint\Radiss
 D:\GIT_CLONED_Projects\Radisson_DEV\Radisson_RHG\obj\Debug\net10.0\Radisson_RHG.pdb
 D:\GIT_CLONED_Projects\Radisson_DEV\Radisson_RHG\obj\Debug\net10.0\Radisson_RHG.genruntimeconfig.cache
 D:\GIT_CLONED_Projects\Radisson_DEV\Radisson_RHG\obj\Debug\net10.0\ref\Radisson_RHG.dll
-D:\GIT_CLONED_Projects\Radisson_DEV\Radisson_RHG\obj\Debug\net10.0\Radisson_RHG.RazorAssemblyInfo.cache
-D:\GIT_CLONED_Projects\Radisson_DEV\Radisson_RHG\obj\Debug\net10.0\Radisson_RHG.RazorAssemblyInfo.cs
