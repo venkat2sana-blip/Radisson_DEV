@@ -158,7 +158,7 @@ namespace Radisson_RHG.Controllers
             if (from == default || to == default)
                 return BadRequest("Both from and to query parameters are required in ISO date format,");
             if (from > to)
-                return BadRequest("from must be less than or equal to to");
+                return NotFound("from must be less than or equal to"); // adding custom exception handling for this case can be done in middleware if needed
             var fromUtc = from;
             var toUtc = to.Date.AddDays(1).AddTicks(-1);
 
@@ -176,7 +176,7 @@ namespace Radisson_RHG.Controllers
                 return BadRequest("please provide atleast mobile or email");
             var returnresult = _registrationinterface.GetByMobileOrEmail(mobile,email);
             if (returnresult == null)
-            
+                //custom exception handling can be done in middleware if needed
                 return NotFound("No registration found with the provided details");
             
 
