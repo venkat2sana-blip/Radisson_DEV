@@ -1,0 +1,43 @@
+﻿@* Pages/Admin/Dashboard.cshtml *@
+ @page 
+@model object
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Admin Dashboard</title>
+  <meta name="viewport" content="width=device-width" />
+  <style>body{font-family:Segoe UI,Arial;margin:2rem}</style>
+</head>
+<body>
+  <h1>Admin Dashboard</h1>
+  <p id="welcome">Loading...</p>
+  <button id="logout">Log out</button>
+
+  <script>
+    // Client-side guard: require token and Admin role
+    (function() {
+      const token = localStorage.getItem('jwt');
+      const role = (localStorage.getItem('role') || '').toLowerCase();
+
+      if (!token || role !== 'admin') {
+        // not authorized client-side -> go to login
+        window.location.href = '/login';
+        return;
+      }
+
+      document.getElementById('welcome').textContent = 'Welcome, Admin. You are authenticated.';
+
+      document.getElementById('logout').addEventListener('click', () => {
+        localStorage.removeItem('jwt');
+        localStorage.removeItem('role');
+        window.location.href = '/login';
+      });
+
+      // Optional: example call to a protected API endpoint
+      // fetch('/api/admin/secret', { headers: { Authorization: `Bearer ${token}` } })
+      //   .then(r => r.json()).then(console.log).catch(()=>{});
+    })();
+  </script>
+</body>
+</html>

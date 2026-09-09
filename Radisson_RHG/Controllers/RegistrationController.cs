@@ -125,21 +125,21 @@ namespace Radisson_RHG.Controllers
         }
 
 
-        [HttpPatch("{id}")]
-        public IActionResult Patch(int id, [FromBody] JsonPatchDocument<Registration> patchDoc)
-        {
-            if (patchDoc == null)
-                return NotFound();
-            var recordex = _registrationinterface.Getbyid(id);
-            if (recordex == null)
-                return NotFound();
-            patchDoc.ApplyTo(recordex,ModelState);
-            if (!TryValidateModel(recordex))
-                return ValidationProblem(ModelState);
+        //[HttpPatch("{id}")]
+        //public IActionResult Patch(int id, [FromBody] JsonPatchDocument<Registration> patchDoc)
+        //{
+        //    if (patchDoc == null)
+        //        return NotFound();
+        //    var recordex = _registrationinterface.Getbyid(id);
+        //    if (recordex == null)
+        //        return NotFound();
+        //    patchDoc.ApplyTo(recordex,ModelState);
+        //    if (!TryValidateModel(recordex))
+        //        return ValidationProblem(ModelState);
 
-            _registrationinterface.Modify(id, recordex);
-            return Ok(recordex);
-        }
+        //    _registrationinterface.Modify(id, recordex);
+        //    return Ok(recordex);
+        //}
 
 
 

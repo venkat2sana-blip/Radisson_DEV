@@ -1,0 +1,38 @@
+﻿@* Pages/User/Home.cshtml *@
+@page
+@model object
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>User Home</title>
+  <meta name="viewport" content="width=device-width" />
+  <style>body{font-family:Segoe UI,Arial;margin:2rem}</style>
+</head>
+<body>
+  <h1>User Home</h1>
+  <p id="welcome">Loading...</p>
+  <button id="logout">Log out</button>
+
+  <script>
+    (function() {
+      const token = localStorage.getItem('jwt');
+      const role = (localStorage.getItem('role') || '').toLowerCase();
+
+      if (!token) {
+        window.location.href = '/login';
+        return;
+      }
+
+      // optional: allow admin to visit user page as well
+      document.getElementById('welcome').textContent = `Welcome, ${role || 'user'}.`;
+
+      document.getElementById('logout').addEventListener('click', () => {
+        localStorage.removeItem('jwt');
+        localStorage.removeItem('role');
+        window.location.href = '/login';
+      });
+    })();
+  </script>
+</body>
+</html>
