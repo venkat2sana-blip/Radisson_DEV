@@ -19,39 +19,39 @@ namespace Radisson_RHG.Controllers
         }
 
 
-        public record RegisterRequest(string UserName,string Email ,string Password);
+        //public record RegisterRequest(string UserName,string Email ,string Password);
 
-        [HttpPost("register")]
-        public IActionResult Register([FromBody] RegisterRequest req)
-        {
-            if (!ModelState.IsValid)
-                return ValidationProblem(ModelState);
-            if (_repo.GetByUserName(req.UserName )!= null)
-                return Conflict(new { message = "user already exists." });
+        //[HttpPost("register")]
+        //public IActionResult Register([FromBody] RegisterRequest req)
+        //{
+        //    if (!ModelState.IsValid)
+        //        return ValidationProblem(ModelState);
+        //    if (_repo.GetByUserName(req.UserName )!= null)
+        //        return Conflict(new { message = "user already exists." });
                 
-            // create new user
-            var hash = BCrypt.Net.BCrypt.HashPassword(req.Password);
-            var user = new User
-            {
-                UserName = req.UserName,
-                Email = req.Email,
-                PasswordHash = hash,
-                CreatedOn = DateTime.UtcNow,
-                Role="User"
-            };
+        //    // create new user
+        //    var hash = BCrypt.Net.BCrypt.HashPassword(req.Password);
+        //    var user = new User
+        //    {
+        //        UserName = req.UserName,
+        //        Email = req.Email,
+        //        PasswordHash = hash,
+        //        CreatedOn = DateTime.UtcNow,
+        //        Role="User"
+        //    };
 
-            _repo.Create(user);
+        //    _repo.Create(user);
 
 
-            return Ok(new
-            {
-                user.Id,
-                user.UserName,
-                user.Email
-            });
+        //    return Ok(new
+        //    {
+        //        user.Id,
+        //        user.UserName,
+        //        user.Email
+        //    });
            
             
-        }
+        //}
         [HttpPost("login")]
         public IActionResult Login([FromBody] Radisson_RHG.Models.LoginRequest reqs)
         {

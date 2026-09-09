@@ -26,22 +26,6 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Radisson_RHG.Controllers.AuthController",
-    "Method": "Register",
-    "RelativePath": "api/Auth/register",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "req",
-        "Type": "Radisson_RHG.Controllers.AuthController\u002BRegisterRequest",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "Radisson_RHG.Controllers.RegistrationController",
     "Method": "Getall",
     "RelativePath": "api/Registration",
@@ -117,27 +101,6 @@
         "StatusCode": 200
       }
     ]
-  },
-  {
-    "ContainingType": "Radisson_RHG.Controllers.RegistrationController",
-    "Method": "Patch",
-    "RelativePath": "api/Registration/{id}",
-    "HttpMethod": "PATCH",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "patchDoc",
-        "Type": "Microsoft.AspNetCore.JsonPatch.Operations.Operation[]",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
   },
   {
     "ContainingType": "Radisson_RHG.Controllers.RegistrationController",

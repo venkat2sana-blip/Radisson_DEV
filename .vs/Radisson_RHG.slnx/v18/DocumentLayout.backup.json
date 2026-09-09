@@ -3,16 +3,44 @@
   "WorkspaceRootPath": "D:\\GIT_CLONED_Projects\\Radisson_DEV\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{313B42C4-E77D-EC22-38AC-887D0A5FDC21}|Radisson_RHG\\Radisson_RHG.csproj|d:\\git_cloned_projects\\radisson_dev\\radisson_rhg\\pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{313B42C4-E77D-EC22-38AC-887D0A5FDC21}|Radisson_RHG\\Radisson_RHG.csproj|solutionrelative:radisson_rhg\\pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{313B42C4-E77D-EC22-38AC-887D0A5FDC21}|Radisson_RHG\\Radisson_RHG.csproj|d:\\git_cloned_projects\\radisson_dev\\radisson_rhg\\pages\\user.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{313B42C4-E77D-EC22-38AC-887D0A5FDC21}|Radisson_RHG\\Radisson_RHG.csproj|solutionrelative:radisson_rhg\\pages\\user.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{313B42C4-E77D-EC22-38AC-887D0A5FDC21}|Radisson_RHG\\Radisson_RHG.csproj|d:\\git_cloned_projects\\radisson_dev\\radisson_rhg\\pages\\user.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{313B42C4-E77D-EC22-38AC-887D0A5FDC21}|Radisson_RHG\\Radisson_RHG.csproj|solutionrelative:radisson_rhg\\pages\\user.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{313B42C4-E77D-EC22-38AC-887D0A5FDC21}|Radisson_RHG\\Radisson_RHG.csproj|d:\\git_cloned_projects\\radisson_dev\\radisson_rhg\\pages\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{313B42C4-E77D-EC22-38AC-887D0A5FDC21}|Radisson_RHG\\Radisson_RHG.csproj|solutionrelative:radisson_rhg\\pages\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{313B42C4-E77D-EC22-38AC-887D0A5FDC21}|Radisson_RHG\\Radisson_RHG.csproj|d:\\git_cloned_projects\\radisson_dev\\radisson_rhg\\pages\\admin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{313B42C4-E77D-EC22-38AC-887D0A5FDC21}|Radisson_RHG\\Radisson_RHG.csproj|solutionrelative:radisson_rhg\\pages\\admin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{313B42C4-E77D-EC22-38AC-887D0A5FDC21}|Radisson_RHG\\Radisson_RHG.csproj|d:\\git_cloned_projects\\radisson_dev\\radisson_rhg\\pages\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{313B42C4-E77D-EC22-38AC-887D0A5FDC21}|Radisson_RHG\\Radisson_RHG.csproj|solutionrelative:radisson_rhg\\pages\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{313B42C4-E77D-EC22-38AC-887D0A5FDC21}|Radisson_RHG\\Radisson_RHG.csproj|d:\\git_cloned_projects\\radisson_dev\\radisson_rhg\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{313B42C4-E77D-EC22-38AC-887D0A5FDC21}|Radisson_RHG\\Radisson_RHG.csproj|solutionrelative:radisson_rhg\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{313B42C4-E77D-EC22-38AC-887D0A5FDC21}|Radisson_RHG\\Radisson_RHG.csproj|d:\\git_cloned_projects\\radisson_dev\\radisson_rhg\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{313B42C4-E77D-EC22-38AC-887D0A5FDC21}|Radisson_RHG\\Radisson_RHG.csproj|solutionrelative:radisson_rhg\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{313B42C4-E77D-EC22-38AC-887D0A5FDC21}|Radisson_RHG\\Radisson_RHG.csproj|d:\\git_cloned_projects\\radisson_dev\\radisson_rhg\\controllers\\registrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{313B42C4-E77D-EC22-38AC-887D0A5FDC21}|Radisson_RHG\\Radisson_RHG.csproj|solutionrelative:radisson_rhg\\controllers\\registrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{313B42C4-E77D-EC22-38AC-887D0A5FDC21}|Radisson_RHG\\Radisson_RHG.csproj|d:\\git_cloned_projects\\radisson_dev\\radisson_rhg\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{313B42C4-E77D-EC22-38AC-887D0A5FDC21}|Radisson_RHG\\Radisson_RHG.csproj|solutionrelative:radisson_rhg\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{313B42C4-E77D-EC22-38AC-887D0A5FDC21}|Radisson_RHG\\Radisson_RHG.csproj|d:\\git_cloned_projects\\radisson_dev\\radisson_rhg\\middleware\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{313B42C4-E77D-EC22-38AC-887D0A5FDC21}|Radisson_RHG\\Radisson_RHG.csproj|solutionrelative:radisson_rhg\\middleware\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,43 +50,134 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ExceptionHandlingMiddleware.cs",
-              "DocumentMoniker": "D:\\GIT_CLONED_Projects\\Radisson_DEV\\Radisson_RHG\\Middleware\\ExceptionHandlingMiddleware.cs",
-              "RelativeDocumentMoniker": "Radisson_RHG\\Middleware\\ExceptionHandlingMiddleware.cs",
-              "ToolTip": "D:\\GIT_CLONED_Projects\\Radisson_DEV\\Radisson_RHG\\Middleware\\ExceptionHandlingMiddleware.cs",
-              "RelativeToolTip": "Radisson_RHG\\Middleware\\ExceptionHandlingMiddleware.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAAADYAAAAAAAAAAAAAAA==",
+              "Title": "User.cshtml.cs",
+              "DocumentMoniker": "D:\\GIT_CLONED_Projects\\Radisson_DEV\\Radisson_RHG\\Pages\\User.cshtml.cs",
+              "RelativeDocumentMoniker": "Radisson_RHG\\Pages\\User.cshtml.cs",
+              "ToolTip": "D:\\GIT_CLONED_Projects\\Radisson_DEV\\Radisson_RHG\\Pages\\User.cshtml.cs",
+              "RelativeToolTip": "Radisson_RHG\\Pages\\User.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-29T12:28:55.527Z",
+              "WhenOpened": "2026-09-09T16:37:18.798Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "User.cshtml",
+              "DocumentMoniker": "D:\\GIT_CLONED_Projects\\Radisson_DEV\\Radisson_RHG\\Pages\\User.cshtml",
+              "RelativeDocumentMoniker": "Radisson_RHG\\Pages\\User.cshtml",
+              "ToolTip": "D:\\GIT_CLONED_Projects\\Radisson_DEV\\Radisson_RHG\\Pages\\User.cshtml",
+              "RelativeToolTip": "Radisson_RHG\\Pages\\User.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-09T16:34:52.232Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Login.cshtml.cs",
+              "DocumentMoniker": "D:\\GIT_CLONED_Projects\\Radisson_DEV\\Radisson_RHG\\Pages\\Login.cshtml.cs",
+              "RelativeDocumentMoniker": "Radisson_RHG\\Pages\\Login.cshtml.cs",
+              "ToolTip": "D:\\GIT_CLONED_Projects\\Radisson_DEV\\Radisson_RHG\\Pages\\Login.cshtml.cs",
+              "RelativeToolTip": "Radisson_RHG\\Pages\\Login.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-09T16:32:27.673Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Admin.cshtml.cs",
+              "DocumentMoniker": "D:\\GIT_CLONED_Projects\\Radisson_DEV\\Radisson_RHG\\Pages\\Admin.cshtml.cs",
+              "RelativeDocumentMoniker": "Radisson_RHG\\Pages\\Admin.cshtml.cs",
+              "ToolTip": "D:\\GIT_CLONED_Projects\\Radisson_DEV\\Radisson_RHG\\Pages\\Admin.cshtml.cs",
+              "RelativeToolTip": "Radisson_RHG\\Pages\\Admin.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-09T16:32:14.856Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Admin.cshtml",
+              "DocumentMoniker": "D:\\GIT_CLONED_Projects\\Radisson_DEV\\Radisson_RHG\\Pages\\Admin.cshtml",
+              "RelativeDocumentMoniker": "Radisson_RHG\\Pages\\Admin.cshtml",
+              "ToolTip": "D:\\GIT_CLONED_Projects\\Radisson_DEV\\Radisson_RHG\\Pages\\Admin.cshtml",
+              "RelativeToolTip": "Radisson_RHG\\Pages\\Admin.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-09T16:28:50.812Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\GIT_CLONED_Projects\\Radisson_DEV\\Radisson_RHG\\Pages\\Login.cshtml",
+              "RelativeDocumentMoniker": "Radisson_RHG\\Pages\\Login.cshtml",
+              "ToolTip": "D:\\GIT_CLONED_Projects\\Radisson_DEV\\Radisson_RHG\\Pages\\Login.cshtml",
+              "RelativeToolTip": "Radisson_RHG\\Pages\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-09T14:15:59.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\GIT_CLONED_Projects\\Radisson_DEV\\Radisson_RHG\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Radisson_RHG\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\GIT_CLONED_Projects\\Radisson_DEV\\Radisson_RHG\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Radisson_RHG\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAAADMAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-09T13:46:30.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\GIT_CLONED_Projects\\Radisson_DEV\\Radisson_RHG\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Radisson_RHG\\Controllers\\AdminController.cs",
+              "ToolTip": "D:\\GIT_CLONED_Projects\\Radisson_DEV\\Radisson_RHG\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Radisson_RHG\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-09T13:39:31.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "RegistrationController.cs",
               "DocumentMoniker": "D:\\GIT_CLONED_Projects\\Radisson_DEV\\Radisson_RHG\\Controllers\\RegistrationController.cs",
               "RelativeDocumentMoniker": "Radisson_RHG\\Controllers\\RegistrationController.cs",
               "ToolTip": "D:\\GIT_CLONED_Projects\\Radisson_DEV\\Radisson_RHG\\Controllers\\RegistrationController.cs",
               "RelativeToolTip": "Radisson_RHG\\Controllers\\RegistrationController.cs",
-              "ViewState": "AgIAAKYAAAAAAAAAAAAAALIAAABPAAAAAAAAAA==",
+              "ViewState": "AgIAALUAAAAAAAAAAAAAAIsAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-27T17:44:58.639Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\GIT_CLONED_Projects\\Radisson_DEV\\Radisson_RHG\\Program.cs",
               "RelativeDocumentMoniker": "Radisson_RHG\\Program.cs",
               "ToolTip": "D:\\GIT_CLONED_Projects\\Radisson_DEV\\Radisson_RHG\\Program.cs",
               "RelativeToolTip": "Radisson_RHG\\Program.cs",
-              "ViewState": "AgIAAGEAAAAAAAAAAAAAAHQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACMAAABRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-29T12:29:06.071Z",
               "EditorCaption": ""
